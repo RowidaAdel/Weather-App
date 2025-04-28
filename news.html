@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <!-- ^ Favicon -->
+    <link rel="icon" href="./images/favicon.png">
+    <!-- ^ Fonts Family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- ^ Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- ^ Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ^ Stylesheet Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarExample" data-bs-offset="100" tabindex="0">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <div class="img me-3">
+                    <img src="./images/logo.png" alt="weather">
+                </div>
+                <div class="content">
+                    <p class="title m-0">Weather</p>
+                    <span class="small-title">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./livecamera.html">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main class="main-news">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href='./index.html'>Home</a>
+                <span>News</span>
+            </div>
+        </div>
+        <div class="container py-2">
+            <div class="row mt-3 mb-0 d-flex justify-content-between align-items-center g-4">
+                <!-- Card 1: Detailed Weather Reports -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card card-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Detailed Weather Reports</h5>
+                            <p class="card-text">Receive industry-specific forecasts designed by our meteorologists to
+                                help you stay ahead of changing weather conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Expert Consultations -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Consultations</h5>
+                            <p class="card-text">Get direct access to personalised advice and timely weather updates
+                                from our experienced meteorologists.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Location-Specific Weather Overview -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card card-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Location-Specific Weather Overview</h5>
+                            <p class="card-text">Explore detailed forecasts and interactive maps tailored to your
+                                locations, complete with customisable weather layers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4: Custom Weather Alerts -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Weather Alerts</h5>
+                            <p class="card-text">Receive tailored notifications about weather conditions and phenomena
+                                that impact your industry and location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container pt-5 pb-2">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-8 col-sm-12 ">
+                    <div class="d-flex px-4 py-3 align-items-center flex-column">
+                        <div class="email_input w-100 position-relative d-flex flex-column">
+                            <input type="email" placeholder="Enter your email to subscribe..." id="emailInput"
+                                class="me-2" />
+                            <button id="subscribeInput" class="btn subscribe">
+                                <i class="fa-solid fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                        <div id="emailErrorMessage" class="text-danger mt-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
+                    <div
+                        class="social_media d-flex justify-content-center justify-content-md-end align-items-center gap-2">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://support.google.com" target="_blank"><i
+                                class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center py-3 m-0">A weather application delivering accurate and real-time weather
+            updates for users. </p>
+    </footer>
+    <!-- ^ Bootstrap JS  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ^ Main Script -->
+    <script src="./js/index.js"></script>
+    <!-- ^ SweetAlert2 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
